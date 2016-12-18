@@ -10,11 +10,22 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailTextField: SexyField!
+    @IBOutlet weak var passwordTextField: SexyField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
+            print("BRIAN: ID found in keychain")
+            performSegue(withIdentifier: "FeedVC", sender: nil)
+        }
         
     }
 
@@ -43,9 +54,47 @@ class SignInVC: UIViewController {
                 print("BRIAN: Unable to authenticate with Firebase")
             } else {
                 print("BRIAN: Successfully authenticated with Firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
 
     }
 
+    @IBAction func signInBtnPress(_ sender: Any) {
+        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("BRIAN: Email user authenticated with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("BRIAN: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("BRIAN: Successfully authenticated with Firebase")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                                
+                            }
+                        }
+                    })
+                }
+            })
+            
+        }
+        
+    }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("BRIAN: Segway completed \(keychainResult)")
+        performSegue(withIdentifier: "FeedVC", sender: nil)
+    }
+    
 }
+
