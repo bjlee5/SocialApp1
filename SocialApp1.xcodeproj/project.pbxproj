@@ -23,6 +23,8 @@
 		D02584471DD814A000390911 /* SexyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02584461DD814A000390911 /* SexyField.swift */; };
 		D02584491DD814A500390911 /* SexyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02584481DD814A500390911 /* SexyButton.swift */; };
 		D025844F1DD8D09000390911 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025844E1DD8D09000390911 /* FeedVC.swift */; };
+		D073F4CC1E07512E00DA084D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073F4CB1E07512E00DA084D /* DataService.swift */; };
+		D073F4CE1E0772DE00DA084D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073F4CD1E0772DE00DA084D /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		D02584461DD814A000390911 /* SexyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexyField.swift; sourceTree = "<group>"; };
 		D02584481DD814A500390911 /* SexyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexyButton.swift; sourceTree = "<group>"; };
 		D025844E1DD8D09000390911 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		D073F4CB1E07512E00DA084D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D073F4CD1E0772DE00DA084D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		D02584211DD80C5C00390911 /* SocialApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				D073F4CA1E07510C00DA084D /* Services */,
 				D025844A1DD814C600390911 /* Utilities */,
 				D02584401DD8148D00390911 /* Constants.swift */,
 				D025844B1DD814CC00390911 /* Model */,
@@ -124,6 +129,7 @@
 		D025844B1DD814CC00390911 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D073F4CD1E0772DE00DA084D /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,6 +154,15 @@
 				D025844E1DD8D09000390911 /* FeedVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D073F4CA1E07510C00DA084D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D073F4CB1E07512E00DA084D /* DataService.swift */,
+			);
+			name = Services;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +293,10 @@
 				D01F2FB91E0638EC0082FE91 /* CircleView.swift in Sources */,
 				D02584231DD80C5D00390911 /* AppDelegate.swift in Sources */,
 				D02584451DD8149C00390911 /* RoundButton.swift in Sources */,
+				D073F4CE1E0772DE00DA084D /* Post.swift in Sources */,
 				D02584431DD8149200390911 /* SexyView.swift in Sources */,
 				D02584471DD814A000390911 /* SexyField.swift in Sources */,
+				D073F4CC1E07512E00DA084D /* DataService.swift in Sources */,
 				D025844F1DD8D09000390911 /* FeedVC.swift in Sources */,
 				D025843F1DD8147000390911 /* SignInVC.swift in Sources */,
 				D02584411DD8148D00390911 /* Constants.swift in Sources */,
