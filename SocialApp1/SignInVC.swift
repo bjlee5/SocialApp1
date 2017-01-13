@@ -62,6 +62,7 @@ class SignInVC: UIViewController {
         })
 
     }
+    
 
     @IBAction func signInBtnPress(_ sender: Any) {
         
@@ -93,12 +94,18 @@ class SignInVC: UIViewController {
         
     }
     
+    @IBAction func createPress(_ sender: Any) {
+        performSegue(withIdentifier: "NewUserVC", sender: nil)
+    }
+
+    
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("BRIAN: Segway completed \(keychainResult)")
         performSegue(withIdentifier: "FeedVC", sender: nil)
     }
+    
     
 }
 
