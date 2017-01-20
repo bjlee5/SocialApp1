@@ -34,39 +34,13 @@ class PostCell: UITableViewCell {
 
     }
         
-    func configureCell(post: Post, img: UIImage? = nil, proImg: UIImage? = nil) {
-        let userRef = likesRef.child("users/\(FIRAuth.auth()!.currentUser!.uid)")
-        userRef.observe(.value, with: { (snapshot) in
+    func configureCell(post: Post, img: UIImage? = nil) {
         
-        let user = User(snapshot: snapshot)
         self.post = post
         self.likesRef = DataService.ds.REF_CURRENT_USERS.child("likes").child(post.postKey)
         self.postText.text = post.caption
         self.likesLabel.text = "\(post.likes)"
-        self.userName.text = user.username
-            
-            if proImg != nil {
-                self.profilePic.image = proImg
-            } else {
-                    let ref = FIRStorage.storage().reference(forURL: user.proPicURL)
-                    ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
-                        if error != nil {
-                            print("BRIAN: Unable to download image from Firebase")
-                        } else {
-                            print("Image downloaded successfully")
-                            if let imgData = data {
-                                if let proImg = UIImage(data: imgData) {
-                                    self.profilePic.image = proImg
-                                    FeedVC.imageCache.setObject(proImg, forKey: user.proPicURL as NSString!)
-                                }
-                            }
-                            
-                            
-                        }
-                    })
-                    
-                }
-            
+        
         if img != nil {
             self.userPost.image = img
         } else {
@@ -88,8 +62,6 @@ class PostCell: UITableViewCell {
             })
         
         }
-    })
-
     
     likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
     if let _ = snapshot.value as? NSNull {

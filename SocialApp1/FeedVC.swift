@@ -146,6 +146,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     }
     
+    @IBAction func profilePress(_ sender: Any) {
+        performSegue(withIdentifier: "ProfileVC", sender: self)
+    }
+    
     @IBAction func buttonPress(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("BRIAN: ID removed from Key, \(keychainResult)")

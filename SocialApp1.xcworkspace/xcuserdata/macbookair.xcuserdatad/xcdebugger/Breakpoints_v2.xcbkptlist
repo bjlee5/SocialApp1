@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialApp1/PostCell.swift"
-            timestampString = "506038597.70032"
+            timestampString = "506041602.005839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "configureCell(post:img:proImg:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "configureCell(post:img:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialApp1/PostCell.swift"
-            timestampString = "506038597.70032"
+            timestampString = "506041602.005839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "configureCell(post:img:proImg:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "configureCell(post:img:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialApp1/PostCell.swift"
-            timestampString = "506038597.70032"
+            timestampString = "506041602.005839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "configureCell(post:img:proImg:)"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "configureCell(post:img:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -192,38 +192,6 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "awakeFromNib()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialApp1/PostCell.swift"
-            timestampString = "506033987.753494"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "configureCell(post:img:proImg:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialApp1/PostCell.swift"
-            timestampString = "506038597.70032"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "configureCell(post:img:proImg:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

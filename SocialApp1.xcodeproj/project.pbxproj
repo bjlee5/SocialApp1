@@ -23,12 +23,12 @@
 		D02584471DD814A000390911 /* SexyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02584461DD814A000390911 /* SexyField.swift */; };
 		D02584491DD814A500390911 /* SexyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02584481DD814A500390911 /* SexyButton.swift */; };
 		D025844F1DD8D09000390911 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025844E1DD8D09000390911 /* FeedVC.swift */; };
-		D041E59F1E272196006BCBC3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E59E1E272196006BCBC3 /* AuthService.swift */; };
 		D041E5A11E2966DE006BCBC3 /* TestNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E5A01E2966DE006BCBC3 /* TestNew.swift */; };
 		D041E5A31E2974F1006BCBC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E5A21E2974F1006BCBC3 /* User.swift */; };
+		D041E5A51E299319006BCBC3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E5A41E299319006BCBC3 /* ProfileVC.swift */; };
 		D073F4CC1E07512E00DA084D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073F4CB1E07512E00DA084D /* DataService.swift */; };
 		D073F4CE1E0772DE00DA084D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073F4CD1E0772DE00DA084D /* Post.swift */; };
-		D079CBCE1E244F0B00F83C59 /* NewUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079CBCD1E244F0B00F83C59 /* NewUserVC.swift */; };
+		D0A747BD1E32CEC80089C84F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A747BC1E32CEC80089C84F /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +52,12 @@
 		D02584461DD814A000390911 /* SexyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexyField.swift; sourceTree = "<group>"; };
 		D02584481DD814A500390911 /* SexyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexyButton.swift; sourceTree = "<group>"; };
 		D025844E1DD8D09000390911 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
-		D041E59E1E272196006BCBC3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = SocialApp1/AuthService.swift; sourceTree = "<group>"; };
 		D041E5A01E2966DE006BCBC3 /* TestNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNew.swift; sourceTree = "<group>"; };
 		D041E5A21E2974F1006BCBC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D041E5A41E299319006BCBC3 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		D073F4CB1E07512E00DA084D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D073F4CD1E0772DE00DA084D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		D079CBCD1E244F0B00F83C59 /* NewUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserVC.swift; sourceTree = "<group>"; };
+		D0A747BC1E32CEC80089C84F /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 			children = (
 				D025843E1DD8147000390911 /* SignInVC.swift */,
 				D025844E1DD8D09000390911 /* FeedVC.swift */,
-				D079CBCD1E244F0B00F83C59 /* NewUserVC.swift */,
+				D041E5A41E299319006BCBC3 /* ProfileVC.swift */,
 				D041E5A01E2966DE006BCBC3 /* TestNew.swift */,
 			);
 			name = Controller;
@@ -171,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D073F4CB1E07512E00DA084D /* DataService.swift */,
-				D041E59E1E272196006BCBC3 /* AuthService.swift */,
+				D0A747BC1E32CEC80089C84F /* AuthService.swift */,
 			);
 			name = Services;
 			path = ..;
@@ -313,11 +313,11 @@
 				D025844F1DD8D09000390911 /* FeedVC.swift in Sources */,
 				D041E5A11E2966DE006BCBC3 /* TestNew.swift in Sources */,
 				D025843F1DD8147000390911 /* SignInVC.swift in Sources */,
-				D079CBCE1E244F0B00F83C59 /* NewUserVC.swift in Sources */,
 				D02584411DD8148D00390911 /* Constants.swift in Sources */,
+				D041E5A51E299319006BCBC3 /* ProfileVC.swift in Sources */,
 				D02584491DD814A500390911 /* SexyButton.swift in Sources */,
 				D01F2FBD1E070FC90082FE91 /* PostCell.swift in Sources */,
-				D041E59F1E272196006BCBC3 /* AuthService.swift in Sources */,
+				D0A747BD1E32CEC80089C84F /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
